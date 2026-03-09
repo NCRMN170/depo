@@ -17,6 +17,8 @@ rm -rf arch/arm/boot/dts/a3a84g
 TARGET_DIR="arch/arm/boot/dts/"
 find "$TARGET_DIR" -type f \( -iname "*.dtb" -o -iname "*.img" \) -exec rm -f {} \;
 
+rm -rf ~/kernel_build/out
+
 echo "İşlem tamamlandı. Devam etmek için bir tuşa basın..."
 read -n1 -s
 
